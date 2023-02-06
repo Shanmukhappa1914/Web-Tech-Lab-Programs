@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Program 12</title>
+
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h3>First number: <input type="text" id="a"></h3>
+        <h3>Second number: <input type="text" id="b"></h3>
+        <input type="button" onclick="add()" value="Addition">
+        <input type="button" onclick="sub()" value="Substraction">
+        <input type="button" onclick="mul()" value="MUltiplication">
+        <input type="button" onclick="div()" value="Division">
+    </form>
+    <h2>Result : <span id="result"></span></h2>
+    <script>
+        function add(){
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            c = a + b;
+            document.getElementById("result").innerHTML = c;
+        }
+        function sub(){
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            c = a - b;
+            document.getElementById("result").innerHTML = c;
+        }
+        function mul(){
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            c = a * b;
+            document.getElementById("result").innerHTML = c;
+        }
+        function div(){
+            a = parseInt(document.getElementById("a").value);
+            b = parseInt(document.getElementById("b").value);
+            c = a / b;
+            document.getElementById("result").innerHTML = c;
+        }
+    </script>
+</body>
+
+</html>
